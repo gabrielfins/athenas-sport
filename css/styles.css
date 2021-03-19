@@ -186,4 +186,6 @@ input[type="search"]::-webkit-search-results-decoration {
 .category-link:hover {
     text-decoration: underline;
 }
-
+.login{
+    text-decoration: none;
+}
