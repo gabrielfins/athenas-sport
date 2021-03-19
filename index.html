@@ -17,7 +17,7 @@
                     <input class="search-box" type="search" placeholder="Busque por produtos, categorias, etc...">
                     <span class="material-icons md-24 md-light">search</span>
                 </div>
-                <a class="login" href="login.html"><button class="nav-round-button"><span class="material-icons md-36 md-light">account_circle</span></button></a>
+                <a class="nav-round-button" href="login.html"><span class="material-icons md-36 md-light">account_circle</span></a>
                 <button class="nav-round-button"><span class="material-icons md-36 md-light">shopping_bag</span></button>
             </div>
         </div>
@@ -177,7 +177,62 @@
     </nav>
     <header>
         <div class="carousel">
-            
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <li class="carousel-item active">
+                        <div class="carousel-image-container">
+                            <img class="carousel-image" src="img/tenis-2.png" alt="Tênis Adidas">
+                        </div>
+                        <div class="carousel-item-info">
+                            <h1 class="item-name">Tênis Adidas</h1>
+                            <div class="carousel-price-container">
+                                <div>
+                                    <p class="original-price">de R$ 250,00</p>
+                                    <h2 class="discount-price">por R$ 189,99</h2>
+                                </div>
+                                <button class="buy-button"><span class="material-icons-outlined">shopping_cart</span>Compre já</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="carousel-image-container">
+                            <img class="carousel-image" src="img/tenis-1.png" alt="Tênis Olympikus">
+                        </div>
+                        <div class="carousel-item-info">
+                            <h1 class="item-name">Tênis Olympikus</h1>
+                            <div class="carousel-price-container">
+                                <div>
+                                    <p class="original-price">de R$ 200,00</p>
+                                    <h2 class="discount-price">por R$ 148,99</h2>
+                                </div>
+                                <button class="buy-button"><span class="material-icons-outlined">shopping_cart</span>Compre já</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="carousel-image-container">
+                            <img class="carousel-image" src="img/tenis-5.png" alt="Tênis Nike">
+                        </div>
+                        <div class="carousel-item-info">
+                            <h1 class="item-name">Tênis Nike</h1>
+                            <div class="carousel-price-container">
+                                <div>
+                                    <p class="original-price">de R$ 450,00</p>
+                                    <h2 class="discount-price">por R$ 379,99</h2>
+                                </div>
+                                <button class="buy-button"><span class="material-icons-outlined">shopping_cart</span>Compre já</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel-button carousel-button-left is-hidden"><span class="material-icons-outlined">navigate_before</span></button>
+            <button class="carousel-button carousel-button-right"><span class="material-icons-outlined">navigate_next</span></button>
+            <div class="carousel-nav">
+                <button class="carousel-indicator active"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+            </div>
         </div>
     </header>
     <script src="js/main.js"></script>
