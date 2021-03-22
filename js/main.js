@@ -5,8 +5,6 @@ const nextButton = document.querySelector('.carousel-button-right');
 const carouselNav = document.querySelector('.carousel-nav');
 const carouselNavButtons = Array.from(carouselNav.children);
 
-const slideWidth = slides[0].getBoundingClientRect().width;
-
 const moveToSlide = (track, currentSlide, targetSlide) => {
     track.style.transform = 'translateX(-' + targetSlide.offsetLeft + 'px)';
     currentSlide.classList.remove('active');
@@ -30,6 +28,10 @@ const toggleNavArrowsVisibility = (targetIndex) => {
         nextButton.classList.remove('is-hidden');
     }
 }
+
+window.addEventListener('resize', () => {
+    track.style.transform = 'translateX(-' + track.querySelector('.active').offsetLeft + 'px)';
+})
 
 prevButton.addEventListener('click', () => {
     const currentSlide = track.querySelector('.active');
