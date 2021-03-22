@@ -1,8 +1,6 @@
 .fotobox{
     display:flex;
-    flex-direction: column;
 }
-.describox{
+.englobox{
     display:flex;
-    flex-direction: column;
 }
