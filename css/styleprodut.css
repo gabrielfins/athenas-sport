@@ -1,0 +1,8 @@
+.fotobox{
+    display:flex;
+    flex-direction: column;
+}
+.describox{
+    display:flex;
+    flex-direction: column;
+}
