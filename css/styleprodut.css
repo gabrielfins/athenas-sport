@@ -1,6 +1,14 @@
 .fotobox{
+    padding:5em;
     display:flex;
 }
 .englobox{
     display:flex;
+}
+.titulo-produto{
+    padding:40px;
+}
+
+.descricao{
+    padding:
 }
