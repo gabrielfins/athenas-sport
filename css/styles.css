@@ -29,6 +29,10 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
+a {
+    text-decoration: none;
+}
+
 .navbar {
     width: 100%;
     display: flex;
