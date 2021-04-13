@@ -5,6 +5,7 @@
 }
 .englobox{
     display:flex;
+    padding:8px;
 }
 .englobox1{
     display:flex;
@@ -13,11 +14,15 @@
 .titulo-produto{
     padding:40px;
 }
-
-.descricao{
+.area-descricao{
+    background-color: #DBD4D3;
+    width:100%;
     padding:20px;
 }
-
+.descricao{
+    padding:0 80px;
+    margin-bottom:4px;
+}
 .preco{
     padding:10px;
 }
