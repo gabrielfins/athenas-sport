@@ -36,18 +36,34 @@
     padding-top: 1%;
 }
 
-.tudo{
-    border: double;
-    padding: 1%;
-    margin: 5%;
-    
-}
-
 .produtos{
- text-align: ;
+ display: inline-block;
+ border: double;
+ border-right: 20%;
+ margin-top: 7% ;
+ margin-bottom: 0%;
+ margin-left: 8%;
+ margin-right: 10%;
+ padding: 0,1%;
+ width: 50%;
+ min-height: 40%;
+
 }
 
 .valortotal{
-    text-align: end
+    
+margin-top:7%;
+display: inline-block;
+border: double;
+}
 
+.sinal{
+margin-right: 50%;
+margin-left: 40%;
+}
+
+.titulo{
+    position: absolute;
+    height: 20%;
+    text-align: center;
 }
