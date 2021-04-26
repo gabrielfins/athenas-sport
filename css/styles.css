@@ -455,7 +455,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .new-product-container {
     padding: 3rem 4rem;
     display: flex;
-    background-color: #1a1a1a;
+    background-color: #0c0c0c;
 }
 
 .new-product-image {

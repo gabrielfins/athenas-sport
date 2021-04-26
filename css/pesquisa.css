@@ -29,3 +29,7 @@
     color: #8b8b8b;
     margin-left: 5px;
 }
+
+#search-results {
+    min-height: 20vh;
+}

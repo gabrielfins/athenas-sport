@@ -6,178 +6,13 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp">
     <link rel="stylesheet" href="css/carrinho.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Athenas Sport</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-links">
-            <a class="logo-container" href="index.html"><img class="logo" src="img/athenas-sport-logo-white.svg" alt="Logo da Athenas Sport"></a>
-            <div class="nav-operations">
-                <div class="search-container">
-                    <input class="search-box" type="search" placeholder="Busque por produtos, categorias, etc...">
-                    <span class="material-icons md-24 md-light">search</span>
-                </div>
-                <a class="nav-round-button" href="login.html"><span class="material-icons md-36 md-light">account_circle</span></a>
-            </div>
-        </div>
-        <div class="nav-categories">
-            <div class="category-dropdown-container">
-                <span class="category-button">Para ele</span>
-                <div class="category-dropdown">
-                    <div class="category">
-                        <span class="category-title">Esportes</span>
-                        <a class="category-link" href="#">Futebol</a>
-                        <a class="category-link" href="#">Vôlei</a>
-                        <a class="category-link" href="#">Corrida</a>
-                        <a class="category-link" href="#">Treino</a>
-                        <a class="category-link" href="#">Yoga</a>
-                        <a class="category-link" href="#">Skateboarding</a>
-                        <a class="category-link" href="#">Basquete</a>
-                        <a class="category-link" href="#">Natação</a>
-                    </div>
-                    <div class="category">
-                        <span class="category-title">Roupas</span>
-                        <a class="category-link" href="#">Camisetas</a>
-                        <a class="category-link" href="#">Polos</a>
-                        <a class="category-link" href="#">Regatas</a>
-                        <a class="category-link" href="#">Camisas de Futebol</a>
-                        <a class="category-link" href="#">Bermudas e Shorts</a>
-                        <a class="category-link" href="#">Moletons e Casacos</a>
-                        <a class="category-link" href="#">Natação</a>
-                        <a class="category-link" href="#">Unissex</a>
-                    </div>
-                    <div class="category">
-                        <span class="category-title">Calçados</span>
-                        <a class="category-link" href="#">Tênis</a>
-                        <a class="category-link" href="#">Chuteiras</a>
-                        <a class="category-link" href="#">Treino</a>
-                        <a class="category-link" href="#">Skateboarding</a>
-                        <a class="category-link" href="#">Chinelos e Sandálias</a>
-                    </div>
-                    <div class="category">
-                        <span class="category-title">Acessórios</span>
-                        <a class="category-link" href="#">Bolsas e Mochilas</a>
-                        <a class="category-link" href="#">Máscaras</a>
-                        <a class="category-link" href="#">Bonés</a>
-                        <a class="category-link" href="#">Meias</a>
-                        <a class="category-link" href="#">Bolas</a>
-                        <a class="category-link" href="#">Caneleiras</a>
-                        <a class="category-link" href="#">Luvas</a>
-                        <a class="category-link" href="#">Garrafas</a>
-                    </div>
-                </div>
-            </div>
-            <div class="category-dropdown-container">
-                <span class="category-button">Para ela</span>
-                <div class="category-dropdown">
-                    <div class="category">
-                        <span class="category-title">Esportes</span>
-                        <a class="category-link" href="#">Futebol</a>
-                        <a class="category-link" href="#">Vôlei</a>
-                        <a class="category-link" href="#">Corrida</a>
-                        <a class="category-link" href="#">Treino</a>
-                        <a class="category-link" href="#">Yoga</a>
-                        <a class="category-link" href="#">Skateboarding</a>
-                        <a class="category-link" href="#">Basquete</a>
-                        <a class="category-link" href="#">Natação</a>
-                    </div>
-                    <div class="category">
-                        <span class="category-title">Roupas</span>
-                        <a class="category-link" href="#">Camisetas</a>
-                        <a class="category-link" href="#">Tops</a>
-                        <a class="category-link" href="#">Shorts</a>
-                        <a class="category-link" href="#">Vetidos</a>
-                        <a class="category-link" href="#">Calças e leggins</a>
-                        <a class="category-link" href="#">Moletons e Casacos</a>
-                        <a class="category-link" href="#">Saias</a>
-                        <a class="category-link" href="#">Maiôs</a>
-                        <a class="category-link" href="#">Unissex</a>
-                    </div>
-                    <div class="category">
-                        <span class="category-title">Calçados</span>
-                        <a class="category-link" href="#">Tênis</a>
-                        <a class="category-link" href="#">Chuteiras</a>
-                        <a class="category-link" href="#">Treino</a>
-                        <a class="category-link" href="#">Skateboarding</a>
-                        <a class="category-link" href="#">Chinelos e Sandálias</a>
-                    </div>
-                    <div class="category">
-                        <span class="category-title">Acessórios</span>
-                        <a class="category-link" href="#">Bolsas e Mochilas</a>
-                        <a class="category-link" href="#">Máscaras</a>
-                        <a class="category-link" href="#">Bonés</a>
-                        <a class="category-link" href="#">Meias</a>
-                        <a class="category-link" href="#">Bolas</a>
-                        <a class="category-link" href="#">Caneleiras</a>
-                        <a class="category-link" href="#">Luvas</a>
-                        <a class="category-link" href="#">Garrafas</a>
-                    </div>
-                </div>
-            </div>
-            <div class="category-dropdown-container">
-                <span class="category-button">Futebol</span>
-                <div class="category-dropdown">
-                    <div class="category">
-                        <a class="category-link" href="#">Camisetas</a>
-                        <a class="category-link" href="#">Regatas</a>
-                        <a class="category-link" href="#">Camisas de times</a>
-                        <a class="category-link" href="#">Shorts e Bermudas</a>
-                        <a class="category-link" href="#">Acessórios</a>
-                        <a class="category-link" href="#">Chuteiras</a>
-                        <a class="category-link" href="#">Meias</a>
-                        <a class="category-link" href="#">Bolas</a>
-                        <a class="category-link" href="#">Luvas</a>
-                    </div>
-                </div>
-            </div>
-            <div class="category-dropdown-container">
-                <span class="category-button">Vôlei</span>
-                <div class="category-dropdown">
-                    <div class="category">
-                        <a class="category-link" href="#">Camisetas</a>
-                        <a class="category-link" href="#">Regatas</a>
-                        <a class="category-link" href="#">Shorts e Bermudas</a>
-                        <a class="category-link" href="#">Acessórios</a>
-                        <a class="category-link" href="#">Meias</a>
-                        <a class="category-link" href="#">Bolas</a>
-                    </div>
-                </div>
-            </div>
-            <div class="category-dropdown-container">
-                <span class="category-button">Basquete</span>
-                <div class="category-dropdown">
-                    <div class="category">
-                        <a class="category-link" href="#">Camisetas</a>
-                        <a class="category-link" href="#">Regatas</a>
-                        <a class="category-link" href="#">Shorts e Bermudas</a>
-                        <a class="category-link" href="#">Acessórios</a>
-                        <a class="category-link" href="#">Meias</a>
-                        <a class="category-link" href="#">Bolas</a>
-                    </div>
-                </div>
-            </div>
-            <div class="category-dropdown-container">
-                <span class="category-button">Outros esportes</span>
-                <div class="category-dropdown">
-                    <div class="category">
-                        <a class="category-link" href="#">Natação</a>
-                        <a class="category-link" href="#">Boliche</a>
-                        <a class="category-link" href="#">Golf</a>
-                        <a class="category-link" href="#">Corrida</a>
-                        <a class="category-link" href="#">Treino</a>
-                        <a class="category-link" href="#">Yoga</a>
-                        <a class="category-link" href="#">Tênis</a>
-                        <a class="category-link" href="#">Rugby</a>
-                        <a class="category-link" href="#">Skateboarding</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-        <h1 class="titulo">Seu Carrinho</h1>
-        <div id="itens" class="produtos"> </div>
-
+    <div class="nav-placeholder"></div>
+    <h1 class="titulo">Seu Carrinho</h1>
+    <div id="itens" class="produtos"> </div>
     <div class="valortotal">      
         <div class=>Subtotal: <span id="total"></span> </div>
         <span class="sinal">+</span>
@@ -185,64 +20,34 @@
         <span class="sinal">=</span>
         <div class=>total: <span id="total"></span> </div><br>
         <button>Finalizar compra</button>
-    </div> 
-<script >
-     var total = 0; 
-     var i = 0;     
-     var valor = 0; 
-        
-     for(i=1; i<=99; i++) 
-     {
-           var prod = localStorage.getItem("produto" + i + ""); 
-           if(prod != null) 
-         {	
-               
-              document.getElementById("itens").innerHTML += localStorage.getItem("qtd" + i) + " x ";
-              document.getElementById("itens").innerHTML += localStorage.getItem("produto" + i);
-              document.getElementById("itens").innerHTML += " ";
-              document.getElementById("itens").innerHTML += "R$: " + localStorage.getItem("valor" + i) + "<hr>";
+    </div>
+    <script>
+        var total = 0; 
+        var i = 0;     
+        var valor = 0; 
 
-              valor = parseFloat(localStorage.getItem("valor" + i)); 
-              total = (total + valor); 
-         }
-     } 
+        for(i=1; i<=99; i++) 
+        {
+            var prod = localStorage.getItem("produto" + i + ""); 
+            if(prod != null) 
+            {
+
+                document.getElementById("itens").innerHTML += localStorage.getItem("qtd" + i) + " x ";
+                document.getElementById("itens").innerHTML += localStorage.getItem("produto" + i);
+                document.getElementById("itens").innerHTML += " ";
+                document.getElementById("itens").innerHTML += "R$: " + localStorage.getItem("valor" + i) + "<hr>";
+
+                valor = parseFloat(localStorage.getItem("valor" + i)); 
+                total = (total + valor); 
+            }
+        } 
         document.getElementById("total").innerHTML = total.toFixed(2); 
     </script>
-
-       <p class="botaolimpar">
-       <button  type="button" onclick=" localStorage.clear(); location.reload();"> Limpar carrinho </button>
-       </p>
-<p> <a href="testecarrinho.html">Comprar mais</a></p>
-
-
-
-<footer>
-    <div class="footer-divider">
-        <div class="footer-container">
-            <h2 class="footer-title">Redes sociais</h2>
-            <div class="footer-content">
-                <a class="footer-link" href="https://www.facebook.com/" target="_blank"><span class="material-icons">facebook</span>Facebook</a>
-                <a class="footer-link" href="https://www.instagram.com/" target="_blank"><img class="footer-icon" src="img/instagram.svg" alt="">Instagram</a>
-            </div>
-        </div>
-        <div class="footer-container-main">
-            <h2 class="footer-title">Endereço</h2>
-            <div class="footer-content">
-                <p class="footer-text">Duque de Caxias - Shopping Unigranrio</p>
-                <iframe class="footer-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14713.440628946973!2d-43.3063694!3d-22.7891149!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa8e4a849a1021f93!2sSHOPPING%20UNIGRANRIO!5e0!3m2!1spt-BR!2sbr!4v1616537071859!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-        <div class="footer-container">
-            <h2 class="footer-title">Contato</h2>
-            <div class="footer-content">
-                <p class="footer-text"><span class="material-icons">call</span>(21) 2784-1123</p>
-                <p class="footer-text"><img src="img/whatsapp.svg" alt="">96184-1123</p>
-                <p class="footer-text"><span class="material-icons">mail</span>athenassport@gmail.com</p>
-            </div>
-        </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright © 2021 Athenas Sport. Todos os direitos reservados.</p>
-    </div>
-</footer>
+    <p class="botaolimpar">
+        <button type="button" onclick="localStorage.clear(); location.reload();">Limpar carrinho</button>
+    </p>
+    <p><a href="testecarrinho.html">Comprar mais</a></p>
+    <div class="footer-placeholder"></div>
+    <script src="js/main.js"></script>
 </body>
+</html>
