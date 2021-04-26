@@ -1,5 +1,6 @@
 @charset "UTF-8";
 body{
+    padding-top: 6rem;
     background-color: rgb(51, 49, 49);
 }
 .form{
