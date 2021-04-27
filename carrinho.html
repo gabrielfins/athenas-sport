@@ -18,9 +18,12 @@
         <span class="sinal">+</span>
         <div class="desconto">Desconto:0.00</div>
         <span class="sinal">=</span>
-        <div class=>total: <span id="total"></span> </div><br>
+        <div class=totalfinal>total: <span id="totalfinal"></span> </div><br>
         <button>Finalizar compra</button>
     </div>
+    <script>
+        var 
+    </script>
     <script>
         var total = 0; 
         var i = 0;     
@@ -42,6 +45,7 @@
             }
         } 
         document.getElementById("total").innerHTML = total.toFixed(2); 
+        document.getElementById("totalfinal").innerHTML = total.toFixed(2);
     </script>
     <p class="botaolimpar">
         <button type="button" onclick="localStorage.clear(); location.reload();">Limpar carrinho</button>
@@ -49,5 +53,6 @@
     <p><a href="testecarrinho.html">Comprar mais</a></p>
     <div class="footer-placeholder"></div>
     <script src="js/main.js"></script>
+
 </body>
 </html>
