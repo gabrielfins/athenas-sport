@@ -36,20 +36,20 @@
 .produtos{
  display: inline-block;
  border: double;
- border-right: 20%;
- margin-top: 7% ;
+
+ margin-top: 6% ;
+
  margin-bottom: 0%;
  margin-left: 8%;
  margin-right: 10%;
  padding: 0,1%;
  width: 50%;
- min-height: 40%;
+
 
 }
 
 .valortotal{
-    
-margin-top:7%;
+
 display: inline-block;
 border: double;
 }
@@ -63,4 +63,6 @@ margin-left: 40%;
     position: absolute;
     height: 20%;
     text-align: center;
+    margin-top:3% ;
+    margin-left:8% ;
 }
