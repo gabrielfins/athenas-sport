@@ -29,7 +29,7 @@ $(function() {
             break;
     }
     
-    $('#search-label').text(`${found ? '' : 'SEM'} RESULTADOS PARA "${params}"`);
+    $('#search-label').text(`${found ? '' : 'SEM '}RESULTADOS PARA "${params.replace(/[+]/, " ")}"`);
     $('#results-number').text(`[${quantity}]`);
     if (found){
         $('#search-results').load('../pesquisa/' + elem);
@@ -55,7 +55,7 @@ function replaceSpecialChars(str)
     str = str.replace(/[ìíîï]/,"i");
     str = str.replace(/[òóôö]/,"o");
     str = str.replace(/[ùúûü]/,"u");
-    str = str.replace(/[ç]/,"c");
+    str = str.replace(/[ç]/,"ç");
 
-    return str.replace(/[^a-z0-9]/gi,''); 
+    return str.replace(/[^a-z0-9]/gi,'');
 }
