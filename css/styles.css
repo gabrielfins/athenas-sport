@@ -114,6 +114,14 @@ input[type="search"]::-webkit-search-results-decoration {
     cursor: pointer;
 }
 
+.nav-round-button span {
+    transition: .3s;
+}
+
+.nav-round-button:hover span {
+    color: #afafaf !important;
+}
+
 .nav-categories {
     width: 100%;
     height: 4rem;
@@ -196,6 +204,11 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .category-link:hover {
     text-decoration: underline;
+}
+
+#account-name {
+    margin: 0 5px;
+    color: white;
 }
 
 .carousel {
@@ -570,4 +583,11 @@ footer {
     align-items: center;
     justify-content: center;
     color: #838383;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    margin: 20px 0;
+    background-color: #afafaf;
 }
