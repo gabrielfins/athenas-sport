@@ -3,35 +3,32 @@ const sizes = [[50, 49, 72, 20],
                [55, 53, 73, 23],
                [60, 57, 77, 24]];
 
-const measures = [51, 51, 73, 22];
+class CalculateIdealSizes {
+    constructor(measures) {
+        this.measures = measures;
+        this.total = [];
+        this.mostAppearences = [0, 0, 0, 0];
+    }
 
-let total = [];
-let mostAppearences = [0, 0, 0, 0];
+    calculate() {
+        for (let i = 0; i < this.measures.length; i++) {
+            if (this.measures[i] < sizes[0][i]) {
+                this.total.push(0);
+            } else if (this.measures[i] > sizes[3][i]) {
+                this.measures.push(3);
+            }
 
-for (let i = 0; i < measures.length; i++) {
-    for (let j = 0; j < sizes.length; j++) {
-        if (measures[i] >= sizes[j][i] - 2 && measures[j] <= sizes[j][i] + 2) {
-            console.log(j, sizes[j][i]);
-            total.push(j);
+            for (let j = 0; j < sizes.length; j++) {
+                if (this.measures[i] >= sizes[j][i] - 2 && this.measures[i] <= sizes[j][i] + 2) {
+                    this.total.push(j);
+                }
+            }
         }
+        
+        this.total.forEach(value => {
+            this.mostAppearences[value] += 1;
+        });
+
+        return this.mostAppearences;
     }
 }
-
-total.forEach(value => {
-    switch (value) {
-        case 0:
-            mostAppearences[0] += 1;
-            break;
-        case 1:
-            mostAppearences[1] += 1;
-            break;
-        case 2:
-            mostAppearences[2] += 1;
-            break;
-        case 3:
-            mostAppearences[3] += 1;
-            break;
-    }
-});
-
-console.log(total, mostAppearences);

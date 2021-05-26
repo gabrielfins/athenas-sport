@@ -128,7 +128,7 @@ input[type=number] {
 }
 
 .action-buttons {
-    height: 100%;
+    margin-top: auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -136,9 +136,8 @@ input[type=number] {
 
 .buy {
     margin: 0;
-    padding: 0;
+    padding: 15px;
     border: none;
-    flex: 1 1 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -151,9 +150,8 @@ input[type=number] {
 
 .add-to-cart {
     margin: 0;
-    padding: 0;
+    padding: 12px;
     border: 2px solid black;
-    flex: 1 1 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -173,4 +171,128 @@ input[type=number] {
 .informations-content {
     padding: 20px;
     background-color: #e4e4e4;
+}
+
+.modal-container {
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.modal-container.active {
+    display: flex;
+}
+
+.dark-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.ideal-size-modal {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.modal-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #afafaf;
+}
+
+.close-button-container {
+    padding: 10px 10px 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.modal-title {
+    margin: 0;
+}
+
+.close-button {
+    width: 36px;
+    height: 36px;
+    margin-left: auto;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: rgba(0, 0, 0, .15);
+}
+
+.close-button:active {
+    background-color: rgba(0, 0, 0, .25);
+}
+
+.modal-content {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.reference-image {
+    width: 420px;
+}
+
+.modal-inputs {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.modal-button {
+    margin-top: auto;
+    padding: 14px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.modal-input {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.ideal-size-result {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.ideal-size-result p, .ideal-size-result h1 {
+    margin: 0;
+}
+
+.ideal-size-result h1{
+    font-size: 56px;
 }

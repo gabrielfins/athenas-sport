@@ -23,12 +23,45 @@
                         <div class="divider"></div>
                         <p>Tamanho</p>
                         <div id="size" class="size-buttons">
-                            <button class="size-button selected">P</button>
-                            <button class="size-button">M</button>
-                            <button class="size-button">G</button>
-                            <button class="size-button">GG</button>
+                            <button id="p" class="size-button selected">P</button>
+                            <button id="m" class="size-button">M</button>
+                            <button id="g" class="size-button">G</button>
+                            <button id="gg" class="size-button">GG</button>
                         </div>
                         <button class="ideal-size-button">Descubra aqui seu tamanho ideal</button>
+                        <div class="modal-container">
+                            <div class="dark-overlay"></div>
+                            <div class="ideal-size-modal">
+                                <div class="close-button-container">
+                                    <h3 class="modal-title">Coloque suas medidas e calcularemos o seu tamanho ideal</h3>
+                                    <button class="close-button"><span class="material-icons-outlined">close</span></button>
+                                </div>
+                                <div class="modal-divider"></div>
+                                <div class="modal-content">
+                                    <img class="reference-image" src="img/tabela-de-medidas-basicas.png" alt="Tabela com a referência de onde devem ser tiradas as medidas.">
+                                    <div class="modal-inputs">
+                                        <div class="modal-input-group">
+                                            <label for="bar">Barra*</label>
+                                            <input class="modal-input" id="bar" type="number">
+                                        </div>
+                                        <div class="modal-input-group">
+                                            <label for="chest">Tórax*</label>
+                                            <input class="modal-input" id="chest" type="number">
+                                        </div>
+                                        <div class="modal-input-group">
+                                            <label for="height">Altura*</label>
+                                            <input class="modal-input" id="height" type="number">
+                                        </div>
+                                        <div class="modal-input-group">
+                                            <label for="arm">Braço*</label>
+                                            <input class="modal-input" id="arm" type="number">
+                                        </div>
+                                        <span>* As medidas devem estar em centímetros (cm).</span>
+                                        <button id="calculate-ideal-size" class="modal-button">Calcular o tamanho</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="product-info">
@@ -124,7 +157,7 @@
     </main>
     <div class="footer-placeholder"></div>
     <script src="js/main.js"></script>
-    <script src="js/product.js"></script>
     <script src="js/ideal-size.js"></script>
+    <script src="js/product.js"></script>
 </body>
 </html>
