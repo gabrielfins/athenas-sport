@@ -1,9 +1,10 @@
+var total = 0.00;
+
 $(function() {
     $('#cep').mask('99999-999');
 
     let products = JSON.parse(localStorage.getItem("products") || "[]");
     let cards = [];
-    let total = 0.00;
     if(products.length !== 0) {
         products.forEach((product) => {
             let card = $(document.createElement('div')).attr('id', product.id).load('../components/product-card.html', function () {
@@ -34,4 +35,27 @@ $(function() {
     }
     $('#subtotal').text('R$' + total);
     $('#total').text('R$' + total);
+});
+
+$('.cep-calc-btn').on('click', function() {
+    let cep = $('#cep').val();
+    let strTemp = 0;
+
+    if (cep.length === 9) {
+        cep = cep.replace('-', '');
+        let strArr = cep.split(''); 
+        for (let i = 0; i < strArr.length; i++) {
+            if (!isNaN(strArr[i])) {
+                strTemp += parseInt(strArr[i]);
+            }
+        }
+
+        $('#frete').text(`R$ ${Number(strTemp + 10)}`);
+        $('#total').text(`R$ ${Number(total + strTemp + 10)}`);
+        $('.frete-price').css('display', 'flex');
+    } else {
+        $('#total').text(`R$ ${total}`);
+        $('.frete-price').css('display', 'none');
+    }
+
 });

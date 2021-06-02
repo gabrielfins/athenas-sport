@@ -168,6 +168,18 @@
     flex-direction: column;
 }
 
+.frete-price {
+    display: none;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.frete-price h3, .frete-price p {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
 .total-price {
     display: flex;
     justify-content: space-between;
